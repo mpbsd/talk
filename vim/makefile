@@ -24,7 +24,6 @@ open:
 
 clean:
 	find . -type f -name main.aux | xargs rm -rf
-	find . -type f -name main.bbl | xargs rm -rf
 	find . -type f -name main.blg | xargs rm -rf
 	find . -type f -name main.log | xargs rm -rf
 	find . -type f -name main.nav | xargs rm -rf
