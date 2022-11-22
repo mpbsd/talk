@@ -1,285 +1,294 @@
-139
----
+\documentclass{article}
 
-::
+\usepackage{fancyhdr}
+\usepackage{poemscol}
 
-    xxxxxxxx xxx xxxxx x xx
-    xxxx, x xxxxxxxxx xxxxx,
-    xxx xxxxx xxxxxxxxx xxxxxx
+\begin{document}
+
+\poemtitle{139}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxxx xxx xxxxx x xx    \verseline
+    xxxx, x xxxxxxxxx xxxxx,   \verseline
+    xxx xxxxx xxxxxxxxx xxxxxx \verseline
     xxx xxxx, xxx xxxxx xxxxx.
+  \end{stanza}
+\end{poem}
 
-140
----
-
-::
-
-    xxxx xxxxxx xx xxx
-    xxxxx xxxx xxxxxxx,
-    xxxxx x xx xxxxx
+\poemtitle{140}
+\begin{poem}
+  \begin{stanza}
+    xxxx xxxxxx xx xxx  \verseline
+    xxxxx xxxx xxxxxxx, \verseline
+    xxxxx x xx xxxxx    \verseline
     x xxxxxxxx xxx xxxx, xxx.
+  \end{stanza}
+\end{poem}
 
-141
----
-
-::
-
-    xxxx xxx xxxxxxxxxxx
-    xxxx xxxxx, x xxxxxxx,
-    xxx xxxxx xx xxxxxxx,
+\poemtitle{141}
+\begin{poem}
+  \begin{stanza}
+    xxxx xxx xxxxxxxxxxx   \verseline
+    xxxx xxxxx, x xxxxxxx, \verseline
+    xxx xxxxx xx xxxxxxx,  \verseline
     xxx xxxx xxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-142
----
-
-::
-
-    xxxxxxx xxxx xxxxxx
-    x xxxxxxxxx xxxxxxxxx,
-    xxxxx xxxxx xx xxxx
+\poemtitle{142}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxx xxxx xxxxxx    \verseline
+    x xxxxxxxxx xxxxxxxxx, \verseline
+    xxxxx xxxxx xx xxxx    \verseline
     xxxxxxx xx xxxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-143
----
-
-::
-
-    xx xxxx xxxxxxx xxxxxx
-    xxxx x xxxxxxx xx xxxxxxxx,
-    xxxx xxxxxxxxx xxx xxxxxxx
+\poemtitle{143}
+\begin{poem}
+  \begin{stanza}
+    xx xxxx xxxxxxx xxxxxx      \verseline
+    xxxx x xxxxxxx xx xxxxxxxx, \verseline
+    xxxx xxxxxxxxx xxx xxxxxxx  \verseline
     xxxxxxx xx xxxxxx.
+  \end{stanza}
+\end{poem}
 
-144
----
-
-::
-
-    xxxxxxx xxx xxxxx xxxx
-    xxxx xxxxxx xxxxxxxxxx,
-    xx xxxxxxxxxxx xxx xxx xxxxxx
+\poemtitle{144}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxx xxx xxxxx xxxx        \verseline
+    xxxx xxxxxx xxxxxxxxxx,       \verseline
+    xx xxxxxxxxxxx xxx xxx xxxxxx \verseline
     xxxxxxxxx xxxxxx xxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-145
----
-
-::
-
-    xx xxx xxxxx xxxxxxxxxxx
-    xxx x xxxxxxx xx xxxxxxxx
-    xxxxx xxx xxx x xxx xxx
+\poemtitle{145}
+\begin{poem}
+  \begin{stanza}
+    xx xxx xxxxx xxxxxxxxxxx  \verseline
+    xxx x xxxxxxx xx xxxxxxxx \verseline
+    xxxxx xxx xxx x xxx xxx   \verseline
     xxxxx xxxxxxxxx x xxxxx.
+  \end{stanza}
+\end{poem}
 
-146
----
-
-::
-
-    xx1924xx
-    xxxxxxx xxxx xxxxxxxx xxx xxxxxxxxx
-    xxx xxx xx xxxxxxxxxx
-    xxx xxxx xx xxx xxxxxxxxx
+\poemtitle{146}
+\begin{poem}
+  \begin{stanza}
+    xx1924xx                            \verseline
+    xxxxxxx xxxx xxxxxxxx xxx xxxxxxxxx \verseline
+    xxx xxx xx xxxxxxxxxx               \verseline
+    xxx xxxx xx xxx xxxxxxxxx           \verseline
     xxxxxx xxxxxx x xxxxxxx.
+  \end{stanza}
+\end{poem}
 
-147
----
-
-::
-
-    xxxxxx x xxxxxxxx xxxxx
-    xxx xx xxxxxx xxxxxxxx,
-    x xxxxxxx xxxxxxx-xx xxx xxxxxx
+\poemtitle{147}
+\begin{poem}
+  \begin{stanza}
+    xxxxxx x xxxxxxxx xxxxx         \verseline
+    xxx xx xxxxxx xxxxxxxx,         \verseline
+    x xxxxxxx xxxxxxx-xx xxx xxxxxx \verseline
     xxx xxxxxx xxxxx xxxxxxx.
+  \end{stanza}
+\end{poem}
 
-148
----
-
-::
-
-    xxxxxxx xxxxxx x xxxxxxxx
-    xxx xxxx xx xxxxxxx,
-    xxx xxxxxx xxx xxxxxxx
+\poemtitle{148}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxx xxxxxx x xxxxxxxx \verseline
+    xxx xxxx xx xxxxxxx,      \verseline
+    xxx xxxxxx xxx xxxxxxx    \verseline
     xxx xxxxx xxx xxxx xxxx.
+  \end{stanza}
+\end{poem}
 
-149
----
-
-::
-
-    xx1925xx
-    xxx xx xxxxxxxx xx xxxxxx
-    xxxxxxx xx xxxxx xx xxxxxx,
-    xxx xxxxx xxxxxxxxxxx
+\poemtitle{149}
+\begin{poem}
+  \begin{stanza}
+    xx1925xx                    \verseline
+    xxx xx xxxxxxxx xx xxxxxx   \verseline
+    xxxxxxx xx xxxxx xx xxxxxx, \verseline
+    xxx xxxxx xxxxxxxxxxx       \verseline
     xxxxxxxxx xx xxxxxxx xxxxx.
+  \end{stanza}
+\end{poem}
 
-150
----
-
-::
-
-    xxxxxxx xxxxxx xxxxxxxxxxx
-    xx xxxxxxxx xx xxxxxxx,
-    xxxxxxx xxxxx xxxxxxxx
+\poemtitle{150}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxx xxxxxx xxxxxxxxxxx \verseline
+    xx xxxxxxxx xx xxxxxxx,    \verseline
+    xxxxxxx xxxxx xxxxxxxx     \verseline
     xxxxx xxxxxxx xx xxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-151
----
-
-::
-
-    xxxxxxx xxxxxx xx xxxxx
-    xxxxx xxxxxxxxx x xxxxxxxx,
-    xxx xxx xxxxx x xxxxxxx
+\poemtitle{151}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxx xxxxxx xx xxxxx     \verseline
+    xxxxx xxxxxxxxx x xxxxxxxx, \verseline
+    xxx xxx xxxxx x xxxxxxx     \verseline
     xxx xxxxx xxxx xx xxxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-152
----
-
-::
-
-    xxx xxxxxxxx xxx xxx
-    x xxx xxxxxxxxx xxx xxx
-    xxx xxx xxxxxx xxx xx xxxx,
+\poemtitle{152}
+\begin{poem}
+  \begin{stanza}
+    xxx xxxxxxxx xxx xxx        \verseline
+    x xxx xxxxxxxxx xxx xxx     \verseline
+    xxx xxx xxxxxx xxx xx xxxx, \verseline
     x xxxxxxxxx xx xxxx.
+  \end{stanza}
+\end{poem}
 
-153
----
-
-::
-
-    xxxxxxxx xxxxx xxxxxxxx
-    xx xxxxxxx xx xxxxxxxx,
-    xx xxxx xxx xxxxx xxx xxx
+\poemtitle{153}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxxx xxxxx xxxxxxxx   \verseline
+    xx xxxxxxx xx xxxxxxxx,   \verseline
+    xx xxxx xxx xxxxx xxx xxx \verseline
     x, xxxxxxxxxx xx xxxxxx.
+  \end{stanza}
+\end{poem}
 
-154
----
-
-::
-
-    xx xxxxxxxxx xx xxxxxxx
-    xxxxxxxx xxxxxxx x xxxx,
-    xxx xxxxx xx xxx xxxxxxxxx
+\poemtitle{154}
+\begin{poem}
+  \begin{stanza}
+    xx xxxxxxxxx xx xxxxxxx    \verseline
+    xxxxxxxx xxxxxxx x xxxx,   \verseline
+    xxx xxxxx xx xxx xxxxxxxxx \verseline
     xxx x xxxxxxxx xxx xx xxxxxx.
+  \end{stanza}
+\end{poem}
 
-155
----
-
-::
-
-    xxxxxxxxxx xx xx xxxx
-    xxxxxx xxxx xx xxxx,
-    xxxxxx xxxxx xxxxx
+\poemtitle{155}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxxxxx xx xx xxxx \verseline
+    xxxxxx xxxx xx xxxx,  \verseline
+    xxxxxx xxxxx xxxxx    \verseline
     xx xxxx xx xxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-156
----
-
-::
-
-    xx xxxxxxxxx xxxxxxx xxxxxxx
-    xxx xxxxx xx xxxxxx,
-    xxxx xxxx xx xxxxxxxxx
+\poemtitle{156}
+\begin{poem}
+  \begin{stanza}
+    xx xxxxxxxxx xxxxxxx xxxxxxx \verseline
+    xxx xxxxx xx xxxxxx,         \verseline
+    xxxx xxxx xx xxxxxxxxx       \verseline
     x xxx xxxx xxxxxxx xxxxx
+  \end{stanza}
+\end{poem}
 
-157
----
-
-::
-
-    xxxxxx xxx xxxxxxxxx
-    x xxx x xx xxxxxxxx
-    x xxxx xx xxxxxxxx xxxxx
+\poemtitle{157}
+\begin{poem}
+  \begin{stanza}
+    xxxxxx xxx xxxxxxxxx     \verseline
+    x xxx x xx xxxxxxxx      \verseline
+    x xxxx xx xxxxxxxx xxxxx \verseline
     xxxxxxx xxxxxxxx, xxxxxx x xxxxxx.
+  \end{stanza}
+\end{poem}
 
-158
----
-
-::
-
-    xxxxx xxxxxxxx
-    xx xxxxxxxx xx xxxxxxxx,
-    xxxxxxxxx xxxxxx xxxx
+\poemtitle{158}
+\begin{poem}
+  \begin{stanza}
+    xxxxx xxxxxxxx           \verseline
+    xx xxxxxxxx xx xxxxxxxx, \verseline
+    xxxxxxxxx xxxxxx xxxx    \verseline
     x xxx x xxx xxxx xxx.
+  \end{stanza}
+\end{poem}
 
-159
----
-
-::
-
-    xx xxxxxxxxx xx xxx
-    xxxxxxx xx xxxxxxxx,
-    xxxxxxxxx xx xxxxxxxxx
+\poemtitle{159}
+\begin{poem}
+  \begin{stanza}
+    xx xxxxxxxxx xx xxx    \verseline
+    xxxxxxx xx xxxxxxxx,   \verseline
+    xxxxxxxxx xx xxxxxxxxx \verseline
     xx xxxxxxxx xx xx xxx.
+  \end{stanza}
+\end{poem}
 
-160
----
-
-::
-
-    x xxxxxxxx xxx xxxxxxxxx
-    xxxx xxxxxx xxxxxx,
-    xx xxxx xxx xxx xxxxxxxxxxx
+\poemtitle{160}
+\begin{poem}
+  \begin{stanza}
+    x xxxxxxxx xxx xxxxxxxxx    \verseline
+    xxxx xxxxxx xxxxxx,         \verseline
+    xx xxxx xxx xxx xxxxxxxxxxx \verseline
     xxxxx xxxxx xxxxxx.
+  \end{stanza}
+\end{poem}
 
-161
----
-
-::
-
-    xx xxxxxx xxx xxxx xxxxxxx
-    xx xxxx xxx xxxxx,
-    xxx xxx xxxxxxxxx xxxxxxx
+\poemtitle{161}
+\begin{poem}
+  \begin{stanza}
+    xx xxxxxx xxx xxxx xxxxxxx \verseline
+    xx xxxx xxx xxxxx,         \verseline
+    xxx xxx xxxxxxxxx xxxxxxx  \verseline
     xxxxxx x xxxxxxxx.
+  \end{stanza}
+\end{poem}
 
-162
----
-
-::
-
-    xxxxxxx xxxxx xx xxxxxx
-    xxxxxx xx xx xxxxxxxx,
-    xxx xxxx xxxxxxx xxxxxxx
+\poemtitle{162}
+\begin{poem}
+  \begin{stanza}
+    xxxxxxx xxxxx xx xxxxxx  \verseline
+    xxxxxx xx xx xxxxxxxx,   \verseline
+    xxx xxxx xxxxxxx xxxxxxx \verseline
     xx xxxxxxxx xxx xxxxxxx.
+  \end{stanza}
+\end{poem}
 
-163
----
-
-::
-
-    xxxxxx xxxx xxxxxxxxxxxx
-    xxx xxxxxxx xx xxxxxx,
-    xxx xxxxx xxxxxxxx
+\poemtitle{163}
+\begin{poem}
+  \begin{stanza}
+    xxxxxx xxxx xxxxxxxxxxxx \verseline
+    xxx xxxxxxx xx xxxxxx,   \verseline
+    xxx xxxxx xxxxxxxx       \verseline
     xxx xxxxxxxxx xxxxx xxx.
+  \end{stanza}
+\end{poem}
 
-164
----
-
-::
-
-    xxxxxx x xxxxx xx xxxxxxxxxxx
-    xxxxxx x xxxxx xxxxx xx xxx,
-    xxxxxxx xxxxx xxx xxxxxxxx
+\poemtitle{164}
+\begin{poem}
+  \begin{stanza}
+    xxxxxx x xxxxx xx xxxxxxxxxxx \verseline
+    xxxxxx x xxxxx xxxxx xx xxx,  \verseline
+    xxxxxxx xxxxx xxx xxxxxxxx    \verseline
     xxxxxx xxxxxxxxxxx xx xxxxx.
+  \end{stanza}
+\end{poem}
 
-165
----
-
-::
-
-    xx xxxxxxxxx xxxxxxx x xxxx
-    xxx xx xxxxxx xxxxxx
-    xx xxx xxxx xxxxxxxxx.
-    xxxxxx xx xxxxxxxx xxxxxxxxxxx
-    xxxxxxxxxxx xxx xxxxxxxx
-    xxxxx xxx xx x xxxxxxxx.
-    xx xxx xxxxx xxxxxxxx
-    xxxxx xxx xxxxxx xxx xxxxxxx
-    xx xxxxx xxxx xxxxxxxx.
-    xxxxxxx xxxxxx xxx xxxxxxxxxx
-    xxxxx x xxxxx xxxxxxxxxxx
-    xxx xx xxxxx xx xxx.
-    x xxxxx xx xxxxxxxx
-    x x xxx xxxxx x xxxxxxx
-    xxx xxxxxxx xxxxxxxx.
-    xxxx xxxxxxx xxx xxx xx xxxx
-    xx xxx xxxxxxxx xxxxxx
+\poemtitle{165}
+\begin{poem}
+  \begin{stanza}
+    xx xxxxxxxxx xxxxxxx x xxxx    \verseline
+    xxx xx xxxxxx xxxxxx           \verseline
+    xx xxx xxxx xxxxxxxxx.         \verseline
+    xxxxxx xx xxxxxxxx xxxxxxxxxxx \verseline
+    xxxxxxxxxxx xxx xxxxxxxx       \verseline
+    xxxxx xxx xx x xxxxxxxx.       \verseline
+    xx xxx xxxxx xxxxxxxx          \verseline
+    xxxxx xxx xxxxxx xxx xxxxxxx   \verseline
+    xx xxxxx xxxx xxxxxxxx.        \verseline
+    xxxxxxx xxxxxx xxx xxxxxxxxxx  \verseline
+    xxxxx x xxxxx xxxxxxxxxxx      \verseline
+    xxx xx xxxxx xx xxx.           \verseline
+    x xxxxx xx xxxxxxxx            \verseline
+    x x xxx xxxxx x xxxxxxx        \verseline
+    xxx xxxxxxx xxxxxxxx.          \verseline
+    xxxx xxxxxxx xxx xxx xx xxxx   \verseline
+    xx xxx xxxxxxxx xxxxxx         \verseline
     xxxxxxxxxx xxx xxxxxxx.
+  \end{stanza}
+\end{poem}
+
+\end{document}

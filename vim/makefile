@@ -10,6 +10,7 @@ endif
 
 draft:
 	$(TEX_ENGINE) main
+	$(TEX_ENGINE) main
 	$(DOC_VIEWER) main.pdf
 
 final:
