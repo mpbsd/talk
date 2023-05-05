@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/beige.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/league.css">
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,7 +16,7 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <!--beginning of metadata-->
+        
         <section>
           <h3>
             A Simons' type formula and hypersurfaces immersed with constant mean curvature
@@ -38,30 +38,186 @@
             </tr>
           </table>
           <h6>
-            Tue, May 09
+            Tuesday, May 09th, 2023.
           </h6>
         </section>
-        <!--end of metadata-->
-        <!--beginning of introduction-->
+
+        <section>
+          <h3>
+            Main results
+          </h3>
+        </section>
+
         <section>
           <section>
             <h6>
-              Pitagoras' Theorem
+              Lemma 1
             </h6>
           </section>
           <section>
-            $a^2=b^2+c^2$
+            If $M$ is compact and has non-negative sectional curvature (for all
+            $2$-planes), then at every point of $M$ we have 
+            \[
+              \nabla{A}=0
+              \quad\text{and}\quad
+              (\lambda_{i}-\lambda_{j})^{2}K_{ij}=0
+              \quad\text{for all}\quad{i,j}.
+            \]
+            In particular, the eigenvalues of $A$ are constant (where the field
+            of unit normals $\xi$ is defined).
           </section>
           <section>
             <h6>
-              Proof of Pitagoras' Theorem
+              Proof.
             </h6>
           </section>
           <section>
             $\alpha$
           </section>
         </section>
-        <!--end of introduction-->
+
+        <section>
+          <section>
+          <h6>
+            Lemma 2
+          </h6>
+          </section>
+          <section>
+            If $M$ has non-negative sectional curvature, and
+            \[
+              f=\text{trace}\left(A^{2}\right)
+            \]
+            is constant on $M$, then we have the same conclusions as Lemma 1.
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6>
+              Lemma 3
+            </h6>
+          </section>
+          <section>
+            Under the assumptions of Lemma 1 or Lemma 2, either $M$ is totally
+            umbilical or $A$ has exactly two distinct constants as eigenvalues
+            at every point.
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6>
+              Theorem 1
+            </h6>
+          </section>
+          <section>
+            Let $M$ be a complete Riemannian manifold of dimension $n$ with
+            non-negative sectional curvature, and $\phi:M\to{\mathbb{R}^{n+1}}$
+            an isometric immersion with constant mean curvature into an
+            Euclidean space $\mathbb{R}^{n+1}$. If
+            $f=\text{trace}\left(A^{2}\right)$ is constant on $M$, then
+            $\phi(M)$ is of the form $\mathbb{S}^{p}\times\mathbb{R}^{n-p}$,
+            $0\leqslant{p}\leqslant{n}$, where $\mathbb{R}^{n-p}$ is an
+            $(n-p)$-dimensional subspace of $\mathbb{R}^{n+p}$, and
+            $\mathbb{S}^{n}$ is a sphere in the Euclidean subspace
+            perpendicular to $\mathbb{R}^{n-p}$. Except for the case $p=1$,
+            $\phi$ is an imbedding.
+          </section>
+        </section>
+
+        <section> <section>
+            <h6>
+              Corollary 1
+            </h6>
+          </section>
+          <section>
+            If $M$ is, in particular, minimal in Theorem 1, then $\phi(M)$ is a
+            hyperplane and $\phi$ is an imbedding.
+          </section>
+        </section>
+        
+        <section>
+          <section>
+            <h6>
+              Corollary 2
+            </h6>
+          </section>
+          <section>
+            Let $M$ be a connected compact Riemannian manifold of dimension $n$
+            with non-negative sectional curvature. If
+            $\phi:M\to{\mathbb{R}^{n+1}}$ is an isometric immersion with
+            constant mean curvature, then $\phi(M)$ is a hypersphere and $\phi$
+            is an imbedding.
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6>
+              Theorem 2
+            </h6>
+          </section>
+          <section>
+            Let $M$ be an $n$-dimensional complete Riemannian manifold with
+            non-negative sectional curvature, and $\phi:M\to{\mathbb{S}^{n+1}}$
+            an isometric immersion with constant mean curvature. If
+            $f=\text{trace}\left(A^{2}\right)$ is constant on $M$, then either:
+            <ul>
+              <li>
+                $\phi(M)$ is a great or small sphere in $\mathbb{S}^{n+1}$, and
+                $\phi$ is an imbedding; or
+              </li>
+              <li>
+                $\phi(M)$ is a product of spheres
+                $\mathbb{S}^{p}(r)\times\mathbb{S}^{q}(s)$, and for
+                $p\notin\{1,n-1\}$, $\phi$ is an imbedding.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6>
+              Corollary 1
+            </h6>
+          </section>
+          <section>
+            If $M$ is, in particular, minimal in Theorem 2, then $\phi(M)$ is a
+            great sphere or
+            \[
+              \mathbb{S}^{p}\left(\sqrt{p/n}\right)\times\mathbb{S}^{n-p}\left(\sqrt{\left(n-p\right)/n}\right).
+            \]
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6>
+              Corollary 2
+            </h6>
+          </section>
+          <section>
+            Let $M$ be a connected compact Riemannian manifold of dimension $n$
+            with non-negative sectional curvature. If
+            $\phi:M\to{\mathbb{S}^{n+1}}$ is an isometric immersion with
+            constant mean curvature, then the conclusion of Theorem 2 holds.
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6>
+              Corollary 3
+            </h6>
+          </section>
+          <section>
+            Let $M$ be a connected compact minimal hypersurface immersed in
+            $\mathbb{S}^{n+1}$. If $M$ has positive sectional curvature, then
+            $M$ is imbedded as a great sphere.
+          </section>
+        </section>
+
       </div>
     </div>
 
