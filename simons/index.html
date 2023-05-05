@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!--beginning of metadata-->
+        <section>
+          <h3>
+            A Simons' type formula and hypersurfaces immersed with constant mean curvature
+          </h3>
+          <h6>
+            Marcelo Bezerra (IME/UFG)
+          </h6>
+          <h6>
+            bezerra@ufg.br
+          </h6>
+          <table>
+            <tr>
+              <td>
+                <img src="images/ime.svg" height="140" width="180">
+              </td>
+              <td>
+                <img src="images/ufg.svg" height="140" width="180">
+              </td>
+            </tr>
+          </table>
+          <h6>
+            Tue, May 09
+          </h6>
+        </section>
+        <!--end of metadata-->
+        <!--beginning of introduction-->
+        <section>
+          <section>
+            <h6>
+              Pitagoras' Theorem
+            </h6>
+          </section>
+          <section>
+            $a^2=b^2+c^2$
+          </section>
+          <section>
+            <h6>
+              Proof of Pitagoras' Theorem
+            </h6>
+          </section>
+          <section>
+            $\alpha$
+          </section>
+        </section>
+        <!--end of introduction-->
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        mathjax3: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          tex: {
+            inlineMath: [ [ '$', '$' ], [ '\\(', '\\)' ]  ]
+          },
+          options: {
+            skipHtmlTags: [ 'script', 'noscript', 'style', 'textarea', 'pre' ]
+          },
+        },
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealHighlight,
+          RevealMarkdown,
+          RevealMath.MathJax3,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+  </body>
+</html>
