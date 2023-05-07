@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{beamer}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+
+\title{A formula of Simons' type and hypersurfaces with constant mean curvature}
+\author{
+  Marcelo Bezerra \\
+  \href{mailto:bezerra@ufg.br}{\small{\texttt{bezerra@ufg.br}}}
+}
+\date{\today}
+
+% custom commands
+\newcommand{\ambientconn}{\overline{\nabla}}
+\newcommand{\ambienteuclideanspace}{\mathbb{R}^{n+1}}
+\newcommand{\ambientspace}{\mathbb{M}}
+\newcommand{\ambientsphere}{\mathbb{S}^{n+1}}
+\newcommand{\forevery}{\forall\,\,}
+\newcommand{\functionspace}[1]{C^{\infty}\left({#1}\right)}
+\newcommand{\immersionconn}{\nabla}
+\newcommand{\laplacian}[1]{\Delta{#1}}
+\newcommand{\restrictedlaplacian}[1]{\Delta'{#1}}
+\newcommand{\normalspace}[2]{T^{\perp}_{#2}{#1}}
+\newcommand{\tangentspace}[2]{T_{#2}{#1}}
+\newcommand{\tensorcovariantderivative}[3]{\left({#2}_{#3}{#1}\right)}
+\newcommand{\trace}[1]{\text{trace}\left({#1}\right)}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage  
+\end{frame}
+
+% introduction
+
+\input{sec/intro/objectives}
+\input{sec/intro/notation}
+
+\begin{frame}[allowframebreaks]{Bibliography}
+  \bibliographystyle{plain}
+  \bibliography{bib/main}
+\end{frame}
+  
+\end{document}

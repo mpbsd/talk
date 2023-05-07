@@ -1,0 +1,125 @@
+\begin{frame}[allowframebreaks]{Notation and basic facts}
+	Let \(\ambientspace\) be an \((n+1)\)-dimensional space form, that is, a
+	Riemannian manifold of dimension \(n+1\) and constant sectional curvature,
+	let's say, \(c\in\left\{-1,0,1\right\}\).
+
+	\framebreak
+
+	Let \(\phi:M\to\ambientspace\) be an isometric immersion of an
+	\(n\)-dimensional Riemannian manifold \(M\) into \(\ambientspace\).
+
+	\framebreak
+
+	For simplicity, we say that \(M\) is a hypersurface immersed into
+	\(\ambientspace\) and, for all local formulas and computations, we may regard
+	\(\phi\) as an imbedding and thus identify \(x\in{M}\) with
+	\(\phi(x)\in\ambientspace\).
+
+	\framebreak
+
+	The tangent space \(\tangentspace{M}{x}\) is identified with a subsapce of
+	the tangent space \(\tangentspace{\ambientspace}{x}\), and the normal space
+	\(\normalspace{M}{x}\) is the subspace of \(\tangentspace{\ambientspace}{x}\)
+	consiting of all \(X\in\tangentspace{\ambientspace}{x}\) which are orthogonal
+	to \(\tangentspace{M}{x}\) with respect to the Riemannian metric \(g\).
+
+	\framebreak
+
+	For an arbitrary point \(x_{0}\in{M}\), there exists an open neighborhood
+	\(U\) of \(x_{0}\) in \(\ambientspace\) and a field of unit vectors
+	\[
+		\xi:U\to{T\ambientspace},
+	\]
+	normal to all of \(U\cap{M}\).
+
+	\framebreak
+
+	The second fundamental form \(h\) and the corresponding symmetric operator
+	\(A\) are defined and related to the covariant differentiations
+	\(\ambientconn\) of \(\ambientspace\) and \(\immersionconn\) of
+	\(M\) by the following formulas:
+
+	\begin{eqnarray}
+		\ambientconn_{X}Y   & = & \immersionconn_{X}Y+h(X,Y),\label{eq:second-fundamental-form}\\
+		\ambientconn_{X}\xi & = & -AX,\label{eq:shape-operator}
+	\end{eqnarray}
+
+	where \(X\) and \(Y\) are (local) vector fields tangent to \(M\).
+
+	\framebreak
+
+	We then have the equations of Gauss
+	\begin{equation}\label{eq:gauss}
+		\forevery{X,Y}\in\tangentspace{M}{x}:\quad{R(X,Y)=cX\wedge{Y}+AX\wedge{AY}},
+	\end{equation}
+	and Codazzi
+	\begin{equation}\label{eq:codazzi}
+		\forevery{X,Y}\in\tangentspace{M}{x}:
+		\quad{\tensorcovariantderivative{A}{\immersionconn}{X}{(Y)}=\tensorcovariantderivative{A}{\immersionconn}{Y}{(X)}},
+	\end{equation}
+	where
+	\[
+		\forevery{X,Y,Z}\in\tangentspace{M}{x}:\quad{(X\wedge{Y})Z=g(Y,Z)X-g(X,Z)Y}.
+	\]
+
+	\framebreak
+
+	Since \(\xi\) is defined locally up to a sign, so is \(A\). Thus, \(A^{2}\)
+	is globally defined.
+
+	\framebreak
+
+	We wish to compute the Laplacian of the function
+	\[
+		f=\trace{A^{2}}\in\functionspace{M}.
+	\]
+	This is given as the trace of the symmetric bilinear for
+
+	\begin{equation}\label{eq:hessian-of-f}
+		H_{f}(X,Y)=X(Yf)-(\immersionconn_{X}Y)f.
+	\end{equation}
+
+	If \(\left\{e_{1},\ldots,e_{n}\right\}\) is an orthonormal basis of
+	\(\tangentspace{M}{x}\), then
+
+	\begin{equation}\label{eq:laplacian-of-f-in-an-orthonormal-basis}
+		(\laplacian{f})(x)=\sum_{i}H_{f}(e_{i},e_{i}).
+	\end{equation}
+
+	\framebreak
+
+	If \(T\) is a tensor field of type \((r,s)\) on \(M\), then the second
+	covariant derivative \(\immersionconn^{2}T\) is given by the formula
+
+	\begin{equation}\label{eq:second-covariant-derivative-of-tensor-fields}
+		\left(\immersionconn^{2}T\right)(;Y;X)=\immersionconn_{X}\left(\immersionconn_{Y}T\right)-\immersionconn_{\immersionconn_{X}{Y}}T,
+	\end{equation}
+
+	where \(X\) and \(Y\) are vector fields on \(M\).
+
+	\framebreak
+
+	At each point \(x\in{M}\), we take an orthonormal basis
+	\(\left\{e_{1},\ldots,e_{n}\right\}\) in \(\tangentspace{M}{x}\) and set
+
+	\begin{equation}\label{eq:restricted-laplacian-of-tensor-fields}
+		(\restrictedlaplacian{T})(x)=\sum_{i=1}^{n}\left(\immersionconn^{2}T\right)(;e_{i};e_{i}).
+	\end{equation}
+
+	This is independent of the choice of an orthonormal basis and the tensor
+	field \(\restrictedlaplacian{T}\) so defined, which is again of type
+	\((r,s)\), is called the \textit{restricted Laplacian} of \(T\).
+
+  \framebreak
+
+  When \(T\) is a function \(f\), then \(\immersionconn^{2}T\) coincides with
+  \(H_{f}\) and \(\restrictedlaplacian{T}\) is nothing but \(\laplacian{f}\).
+
+  \framebreak
+
+  The expression for \(\restrictedlaplacian{T}\) in conventional tensor notation is
+  \[
+    \left(\restrictedlaplacian{T}\right)^{i_{1}\cdots{i_{r}}}_{j_{1}\cdots{j_{s}}}
+    =\sum_{a,b=1}^{n}g^{ab}T^{i_{1}\cdots{i_{r}}}_{j_{1}\cdots{j_{s}};a;b}
+  \] 
+\end{frame}
