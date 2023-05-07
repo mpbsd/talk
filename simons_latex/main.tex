@@ -1,6 +1,7 @@
-\documentclass[a4paper,12pt]{beamer}
+\documentclass[a4paper,12pt,leqno]{beamer}
 
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage{cancel}
 \usepackage{hyperref}
 
 \title{A formula of Simons' type and hypersurfaces with constant mean curvature}
@@ -24,6 +25,7 @@
 \newcommand{\tangentspace}[2]{T_{#2}{#1}}
 \newcommand{\tensorcovariantderivative}[3]{\left({#2}_{#3}{#1}\right)}
 \newcommand{\trace}[1]{\text{trace}\left({#1}\right)}
+\newcommand{\ShapeOperatorsSecondCovariantDerivative}{\mathbb{K}}
 
 \begin{document}
 
@@ -35,6 +37,7 @@
 
 \input{sec/intro/objectives}
 \input{sec/intro/notation}
+\input{sec/development/laplacian}
 
 \begin{frame}[allowframebreaks]{Bibliography}
   \bibliographystyle{plain}

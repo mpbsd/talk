@@ -1,0 +1,79 @@
+\begin{frame}[allowframebreaks]{Computing the Laplacian of \(f=\trace{A^{2}}\)}
+  \begin{align*}
+    Yf & = Y\left(\trace{A^{2}}\right)                                   \\
+       & = \trace{\immersionconn_{Y}A^{2}}                               \\
+       & = \trace{(\immersionconn_{Y}A)A+A(\immersionconn_{Y}A)}         \\
+       & = \trace{(\immersionconn_{Y}A)A}+\trace{A(\immersionconn_{Y}A)} \\
+       & = 2\trace{\left(\immersionconn_{Y}A\right)A}
+  \end{align*}
+
+  \framebreak
+
+  \begin{align*}
+    XYf                               & = X\left(2\trace{\left(\immersionconn_{Y}A\right)A}\right)                                                                               \\
+                                      & = 2\trace{\immersionconn_{X}\left(\immersionconn_{Y}A\right)A+\left(\immersionconn_{Y}A\right)\left(\immersionconn_{X}A\right)}          \\
+                                      & = 2\trace{\immersionconn_{X}\left(\immersionconn_{Y}A\right)A}+2\trace{\left(\immersionconn_{Y}A\right)\left(\immersionconn_{X}A\right)} \\
+                                      &                                                                                                                                          \\
+    \left(\immersionconn_{X}Y\right)A & = 2\trace{\left(\immersionconn_{\immersionconn_{X}Y}A\right)A}                                                                           \\
+                                      &                                                                                                                                          \\
+    H_{f}(X,Y)                        & = XYf-\immersionconn_{\immersionconn_{X}Y}f                                                                                              \\
+                                      & = 2\trace{\left(\immersionconn_{X}\left(\immersionconn_{Y}A\right)-\immersionconn_{\immersionconn_{X}Y}A\right)A}                        \\
+                                      & \qquad+2\trace{\left(\immersionconn_{Y}A\right)\left(\immersionconn_{X}A\right)}                                                         \\
+                                      & = 2\trace{\left(\immersionconn^{2}A(;Y;X)\right)A}+2\trace{\left(\immersionconn_{Y}A\right)\left(\immersionconn_{X}A\right)}
+  \end{align*}
+
+  \framebreak
+
+  Hence, we get that
+
+  \begin{align*}
+    \frac{1}{2}\laplacian{f} & = \sum_{i=1}^{n}\left\{\trace{\left(\immersionconn^{2}A(;e_{i};e_{i})\right)A}+\trace{\left(\immersionconn_{e_{i}}A\right)^{2}}\right\} \\
+                             & = \trace{\left(\restrictedlaplacian{A}\right)A}+\sum_{i=1}^{n}\trace{\left(\immersionconn_{e_{i}}A\right)^{2}}                          \\
+  \end{align*}
+
+  \framebreak
+
+  And by extending the metric \(g\) to the tensor space in the standard way, we
+  may write
+
+  \begin{equation}\label{eq:laplacian-of-f-in-terms-of-the-restricted-laplacian-of-A}
+    \frac{1}{2}\laplacian{f}=g(\restrictedlaplacian{A},A)+g(\immersionconn{A},\immersionconn{A})
+  \end{equation}
+
+  \framebreak
+
+  We shall now compute \(\restrictedlaplacian{A}\). For this purpose, let us write
+
+  \begin{align*}
+    \ShapeOperatorsSecondCovariantDerivative(X,Y) & =\immersionconn^{2}A(;Y;X)                                                                \\
+                                                  & =\immersionconn_{X}\left(\immersionconn_{Y}A\right)-\immersionconn_{\immersionconn_{X}Y}A
+  \end{align*}
+
+  \framebreak
+
+  Using the identities
+
+  \[
+    \immersionconn_{X}Y-\immersionconn_{Y}X-[X,Y]=0,
+  \]
+
+  and
+
+  \[
+    R(X,Y)=[\immersionconn_{X},\immersionconn_{Y}]-\immersionconn_{[X,Y]},
+  \]
+
+  where the curvature transformation \(R(X,Y)\) and the other term ares
+  regarded as derivations of the algebra of tensor fields, we obtain
+
+  \begin{equation}\label{eq:symmetry-of-the-second-covariant-derivative-of-the-shape-operator}
+    \ShapeOperatorsSecondCovariantDerivative(X,Y)=\ShapeOperatorsSecondCovariantDerivative(Y,X)+[R(X,Y),A].
+  \end{equation}
+
+  \framebreak
+
+  \begin{align*}
+    \ShapeOperatorsSecondCovariantDerivative(X,Y)&=\left(\immersionconn_{E_{i}}\left(\immersionconn_{X}A\right)\right)E_{i}-\left(\immersionconn_{\immersionconn_{E_{i}}X}A\right)E_{i}              \\
+                                                 &=\immersionconn_{E_{i}}\left(\left(\immersionconn_{X}A\right)E_{i}\right)-\left(\immersionconn_{X}A\right)\left(\immersionconn_{E_{i}}E_{i}\right)
+  \end{align*}
+\end{frame}
