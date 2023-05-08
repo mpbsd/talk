@@ -72,8 +72,89 @@
 
   \framebreak
 
+  Let \(\left\{e_{1},\ldots,e_{n}\right\}\) be an orthonormal basis in
+  \(\tangentspace{M}{x}\), and extend them to vector fields
+  \(E_{1},\ldots,E_{n}\) in a neighborhood of \(x\) such that
+  \(\immersionconn{E_{i}}=0\) at \(x\). Let \(X\) be a vector field such that
+  \(\immersionconn{X}=0\) at \(x\).
+
+  \framebreak
+
   \begin{align*}
-    \ShapeOperatorsSecondCovariantDerivative(X,Y)&=\left(\immersionconn_{E_{i}}\left(\immersionconn_{X}A\right)\right)E_{i}-\left(\immersionconn_{\immersionconn_{E_{i}}X}A\right)E_{i}              \\
-                                                 &=\immersionconn_{E_{i}}\left(\left(\immersionconn_{X}A\right)E_{i}\right)-\left(\immersionconn_{X}A\right)\left(\immersionconn_{E_{i}}E_{i}\right)
+    \ShapeOperatorsSecondCovariantDerivative(E_{i},X)E_{i} & =\left(\immersionconn_{E_{i}}\left(\immersionconn_{X}A\right)\right)E_{i}-\left(\immersionconn_{\immersionconn_{E_{i}}X}A\right)E_{i}              \\
+                                                           & =\immersionconn_{E_{i}}\left(\left(\immersionconn_{X}A\right)E_{i}\right)-\left(\immersionconn_{X}A\right)\left(\immersionconn_{E_{i}}E_{i}\right) \\
+                                                           & =\immersionconn_{E_{i}}\left(\left(\immersionconn_{E_{i}}A\right)X\right)                                                                          \\
+                                                           & =\left(\immersionconn_{E_{i}}\left(\immersionconn_{E_{i}}A\right)\right)X+\left(\immersionconn_{E_{i}}A\right)\left(\immersionconn_{E_{i}}X\right) \\
+                                                           & =\left(\immersionconn_{E_{i}}\left(\immersionconn_{E_{i}}A\right)\right)X-\left(\immersionconn_{\immersionconn_{E_{i}}E_{i}}A\right)X              \\
+                                                           & =\ShapeOperatorsSecondCovariantDerivative(E_{i},E_{i})X
   \end{align*}
+
+  \framebreak
+
+  We then get that
+
+  \begin{equation}\label{eq:shape-operators-second-convariant-derivative-at-ei-ei}
+    \ShapeOperatorsSecondCovariantDerivative(E_{i},E_{i})=\ShapeOperatorsSecondCovariantDerivative(X,E_{i})+[R(E_{i},X),A]E_{i}
+  \end{equation}
+
+  at \(x\).
+
+  \framebreak
+
+  Similarly, we get that
+
+  \begin{equation}\label{eq:shape-operators-second-covariant-derivative-at-x-ei}
+    \ShapeOperatorsSecondCovariantDerivative(X,E_{i})E_{i}=\immersionconn_{X}\left(\left(\immersionconn_{E_{i}}A\right)E_{i}\right)
+  \end{equation}
+
+  also at \(x\).
+
+  \framebreak
+
+  From now on we assume that \(M\) has \textit{constant mean curvature}, that
+  is, \(\trace{A}=\text{constant}\). Under this assumption, we prove that
+
+  \begin{equation}\label{eq:shape-operator-first-covariant-derivative-null-sum-property}
+    \sum_{i=1}^{n}\left(\immersionconn_{E_{i}}A\right)E_{i}=0
+  \end{equation}
+
+  \framebreak
+
+  Indeed, we have that
+
+  \begin{align*}
+    g\left(\sum_{i=1}^{n}\left(\immersionconn_{E_{i}}A\right)E_{i},Z\right) & =\sum_{i=1}^{n}g\left(E_{i},\left(\immersionconn_{E_{i}}A\right)Z\right) \\
+                                                                            & =\sum_{i=1}^{n}g\left(E_{i},\left(\immersionconn_{Z}A\right)E_{i}\right) \\
+                                                                            & =\trace{\immersionconn_{Z}A}                                             \\
+                                                                            & =Z\left(\trace{A}\right) = 0
+  \end{align*}
+
+  Since this is valid for an arbitrary vector field \(Z\), we
+  conclude~\eqref{eq:shape-operator-first-covariant-derivative-null-sum-property}.
+
+  \framebreak
+
+  Now we have that
+
+  \begin{equation}\label{eq:shape-operator-second-covariant-derivative-null-sum-property}
+    \sum_{i=1}^{n}\ShapeOperatorsSecondCovariantDerivative(X,E_{i})E_{i}
+    =\immersionconn_{X}\left(\sum_{i=1}^{n}\left(\immersionconn_{E_{i}}A\right)E_{i}\right)=0
+  \end{equation}
+  
+  From~\eqref{eq:shape-operators-second-convariant-derivative-at-ei-ei}
+  and~\eqref{eq:shape-operator-second-covariant-derivative-null-sum-property}
+  we get
+
+  \framebreak 
+
+  \begin{equation}\label{eq:formula-for-the-restricted-laplacian-of-A}
+    \begin{split}
+      \left(\restrictedlaplacian{A}\right)(X) & = \sum_{i=1}^{n}\left(\immersionconn^{2}A\right)(X;E_{i};E_{i})                                                                                                    \\
+                                              & =\sum_{i=1}^{n}\left\{\left(\immersionconn_{E_{i}}\left(\immersionconn_{E_{i}}A\right)\right)X-\left(\immersionconn_{\immersionconn_{E_{i}}E_{i}}A\right)X\right\} \\
+                                              & =\sum_{i=1}^{n}\ShapeOperatorsSecondCovariantDerivative(E_{i},E_{i})X                                                                                              \\
+                                              & =\sum_{i=1}^{n}\left\{\ShapeOperatorsSecondCovariantDerivative(X,E_{i})E_{i}+[R(E_{i},X),A]E_{i}\right\}                                                           \\
+                                              & =\sum_{i=1}^{n}[R(E_{i},X),A]E_{i}
+    \end{split}
+  \end{equation}
+  
 \end{frame}
