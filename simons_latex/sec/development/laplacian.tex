@@ -94,7 +94,7 @@
   We then get that
 
   \begin{equation}\label{eq:shape-operators-second-convariant-derivative-at-ei-ei}
-    \ShapeOperatorsSecondCovariantDerivative(E_{i},E_{i})=\ShapeOperatorsSecondCovariantDerivative(X,E_{i})+[R(E_{i},X),A]E_{i}
+    \ShapeOperatorsSecondCovariantDerivative(E_{i},E_{i})X=\ShapeOperatorsSecondCovariantDerivative(X,E_{i})E_{i}+[R(E_{i},X),A]E_{i}
   \end{equation}
 
   at \(x\).
@@ -155,6 +155,98 @@
                                               & =\sum_{i=1}^{n}\left\{\ShapeOperatorsSecondCovariantDerivative(X,E_{i})E_{i}+[R(E_{i},X),A]E_{i}\right\}                                                           \\
                                               & =\sum_{i=1}^{n}[R(E_{i},X),A]E_{i}
     \end{split}
+  \end{equation}
+
+  \framebreak
+
+  By the Gauss equation~\eqref{eq:gauss} we have
+
+  \[
+    R(E_{i},X)=cE_{i}\wedge{X}+AE_{i}\wedge{AX}.
+  \]
+
+  Hence
+
+  \framebreak
+
+  \begin{align*}
+    \sum_{i=1}^{n}R(E_{i},X)AE_{i} & =\sum_{i=1}^{n}c\left\{g(AE_{i},X)E_{i}-g(E_{i},AE_{i})X\right\}         \\
+                                   & \quad+\sum_{i=1}^{n}\left\{g(AE_{i},AX)AE_{i}-g(AE_{i},AE_{i})AX\right\} \\
+                                   & =cAX-c\trace{A}X+A^{3}X-\trace{A^{2}}AX
+  \end{align*}
+
+  Similarly, we get that
+
+  \[
+    \sum_{i=1}^{n}AR(E_{i},X)E_{i}=cAX-cnAX+A^{3}-\trace{A}A^{2}X
+  \]
+
+  \framebreak
+
+  \begin{align*}
+    \sum_{i=1}^{n}[R(E_{i},X),A]E_{i} & =ncAX-\trace{A^{2}}AX             \\
+                                      & \quad-c\trace{A}X+\trace{A}A^{2}X
+  \end{align*}
+
+  \framebreak
+
+  \begin{equation}\label{eq:restricted-laplacian-of-the-shape-operator}
+    \restrictedlaplacian{A}=ncA-\trace{A^{2}}A-c\trace{A}I+\trace{A}A^{2},
+  \end{equation}
+  
+  where \(I\) is the identity operator.
+  From~\eqref{eq:laplacian-of-f-in-terms-of-the-restricted-laplacian-of-A}, we
+  obtain
+
+  \begin{equation}\label{eq:final-form-for-the-laplacian-of-f}
+    \begin{split}
+      \frac{1}{2}\laplacian{f} & =cn\trace{A^{2}}-\left(\trace{A^{2}}\right)^{2}-c\left(\trace{A}\right)^{2}   \\
+                               & \quad+\trace{A}\trace{A^{3}}+g\left(\immersionconn{A},\immersionconn{A}\right)
+    \end{split}
+  \end{equation}
+
+  \framebreak
+
+  In particular, if \(M\) is minimal in \(\ambientspace\), that is, if
+  \(\trace{A}=0\), then
+
+  \[
+    \restrictedlaplacian{A}=ncA-\trace{A^{2}}A
+  \]
+
+  and
+
+  \[
+    \frac{1}{2}\laplacian{f}=cnf-f^{2}+g\left(\immersionconn{A},\immersionconn{A}\right)
+  \]
+  
+  \framebreak
+
+  \begin{lemma}
+    Let \(A\) be an \(n\times{n}\) symmetric matrix with eigenvalues
+    \(\lambda_{1},\ldots,\lambda_{n}\). Then, for any constant \(c\),
+    \begin{align*}
+      nc\trace{A^{2}}&-\left(\trace{A^{2}}\right)^{2}-c\trace{A}^{2}                                                                  \\
+                     & +\trace{A}\trace{A^{3}}=\sum_{i<j}\left(\lambda_{i}-\lambda_{j}\right)^{2}\left(c+\lambda_{i}\lambda_{j}\right)
+    \end{align*}
+  \end{lemma}
+  
+  \framebreak
+
+  Now, for each point \(x\) of the hypersurface \(M\), let
+  \(\left\{e_{1},\ldots,e_{n}\right\}\) be an orthonormal basis in
+  \(\tangentspace{M}{x}\) such that
+
+  \[
+    Ae_{i}=\lambda_{i}e_{i}\quad{(1\leqslant{i}\leqslant{n})}.
+  \]
+
+  Then, equation~\eqref{eq:final-form-for-the-laplacian-of-f} can be written as
+  follows
+
+  \begin{equation}\label{eq:formula-for-the-laplacian-of-f-containing-the-sectional-curvature-of-the-immersion}
+    \frac{1}{2}\laplacian{f}
+    =\sum_{i<j}\left(\lambda_{i}-\lambda_{j}\right)^{2}K_{ij}+g\left(\immersionconn{A},\immersionconn{A}\right)
   \end{equation}
   
 \end{frame}
