@@ -16,11 +16,9 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        
+
         <section>
-          <h3>
-            A Simons' type formula and hypersurfaces immersed with constant mean curvature
-          </h3>
+          <h3>A formula of Simons' type and hypersurfaces with constant mean curvature</h3>
           <h6>
             Marcelo Bezerra (IME/UFG)
           </h6>
@@ -43,186 +41,566 @@
         </section>
 
         <section>
-          <h3>
-            Formula of Simons' type
-          </h3>
-        </section>
-
-        <section>
-          <h3>
-            Main results
-          </h3>
-        </section>
-
-        <section>
+          <h3>Objectives</h3>
           <section>
-            <h6>
-              Lemma 1
-            </h6>
+            Obtain a formula of Simons' type for a hypersurface \(M\) immersed
+            with constant mean curvature into a space form \(\mathbb{M}\).
           </section>
           <section>
-            If $M$ is compact and has non-negative sectional curvature (for all
-            $2$-planes), then at every point of $M$ we have 
+            Rewrite such a formula so that the sectional curvature of \(M\) appears
+            explicitly in it;
+          </section>
+          <section>
+            Based on this new formula, determine all of the hypersurfaces of
+            non-negative sectional curvature immersed with constant mean curvature
+            into either \(\mathbb{R}^{n+1}\) or \(\mathbb{S}^{n+1}\). In order to
+            accomplish that we'll need to ask something more of a certain function,
+            as we shall soon see. 
+          </section>
+        </section>
+
+<section>
+  <h3>Notation and basic facts</h3>
+  <section>
+    Let \(\mathbb{M}\) be an \((n+1)\)-dimensional space form, that is, a
+    Riemannian manifold of dimension \(n+1\) and constant sectional curvature,
+    let's say, \(c\in\left\{-1,0,1\right\}\).
+
+  </section>
+  <section>
+
+    Let \(\phi:M\to\mathbb{M}\) be an isometric immersion of an
+    \(n\)-dimensional Riemannian manifold \(M\) into \(\mathbb{M}\).
+
+  </section>
+  <section>
+
+    For simplicity, we say that \(M\) is a hypersurface immersed into
+    \(\mathbb{M}\) and, for all local formulas and computations, we may regard
+    \(\phi\) as an imbedding and thus identify \(x\in{M}\) with
+    \(\phi(x)\in\mathbb{M}\).
+
+  </section>
+  <section>
+
+    The tangent space \(T_{x}{M}\) is identified with a subsapce of the tangent
+    space \(T_{x}{M}\), and the normal space \(T^{\perp}_{x}{M}\) is the
+    subspace of \(T_{x}{M}\) consiting of all \(X\in{T_{x}{M}}\) which are
+    orthogonal to \(T_{x}{M}\) with respect to the Riemannian metric \(g\).
+
+  </section>
+  <section>
+
+    For an arbitrary point \(x_{0}\in{M}\), there exists an open neighborhood
+    \(U\) of \(x_{0}\) in \(\mathbb{M}\) and a field of unit vectors
+    \[
+    \xi:U\to{T\mathbb{M}},
+    \]
+    normal to all of \(U\cap{M}\).
+
+  </section>
+  <section>
+
+    The second fundamental form \(h\) and the corresponding symmetric operator
+    \(A\) are defined and related to the covariant differentiations
+    \(\overline{\nabla}\) of \(\mathbb{M}\) and \(\nabla\) of
+    \(M\) by the following formulas:
+
+    \begin{eqnarray}
+    \overline{\nabla}_{X}Y   & = & \nabla_{X}Y+h(X,Y),\label{eq:second-fundamental-form}\\
+    \overline{\nabla}_{X}\xi & = & -AX,\label{eq:shape-operator}
+    \end{eqnarray}
+
+    where \(X\) and \(Y\) are (local) vector fields tangent to \(M\).
+
+  </section>
+  <section>
+
+    We then have the equations of Gauss
+    \begin{equation}\label{eq:gauss}
+    \forall{X,Y}\in{T_{x}{M}}:\quad{R(X,Y)=cX\wedge{Y}+AX\wedge{AY}},
+    \end{equation}
+    and Codazzi
+    \begin{equation}\label{eq:codazzi}
+    \forall{X,Y}\in{T_{x}{M}}:
+    \quad{\nabla_{X}{A}(Y)=\nabla_{Y}{A}(X)},
+    \end{equation}
+    where
+    \[
+    \forall{X,Y,Z}\in{T_{x}{M}}:\quad{(X\wedge{Y})Z=g(Y,Z)X-g(X,Z)Y}.
+    \]
+
+  </section>
+  <section>
+
+    Since \(\xi\) is defined locally up to a sign, so is \(A\). Thus, \(A^{2}\)
+    is globally defined.
+
+  </section>
+  <section>
+
+    <section>
+      We wish to compute the Laplacian of the function
+      \[
+      f=\text{trace}\left(A^{2}\right)\in{C^{\infty}(M)}.
+      \]
+    </section>
+
+    <section>
+      This is given as the trace of the symmetric bilinear for
+      \begin{equation}\label{eq:hessian-of-f}
+      H_{f}(X,Y)=X(Yf)-(\nabla_{X}Y)f.
+      \end{equation}
+    </section>
+
+    <section>
+      If \(\left\{e_{1},\ldots,e_{n}\right\}\) is an orthonormal basis of
+      \(T_{x}{M}\), then
+      \begin{equation}\label{eq:laplacian-of-f-in-an-orthonormal-basis}
+      (\Delta{f})(x)=\sum_{i}H_{f}(e_{i},e_{i}).
+      \end{equation}
+    </section>
+
+  </section>
+  <section>
+
+    If \(T\) is a tensor field of type \((r,s)\) on \(M\), then the second
+    covariant derivative \(\nabla^{2}T\) is given by the formula
+
+    \begin{equation}\label{eq:second-covariant-derivative-of-tensor-fields}
+    \left(\nabla^{2}T\right)(;Y;X)=\nabla_{X}\left(\nabla_{Y}T\right)-\nabla_{\nabla_{X}{Y}}T,
+    \end{equation}
+
+    where \(X\) and \(Y\) are vector fields on \(M\).
+
+  </section>
+  <section>
+
+    At each point \(x\in{M}\), we take an orthonormal basis
+    \(\left\{e_{1},\ldots,e_{n}\right\}\) in \(T_{x}{M}\) and set
+
+    \begin{equation}\label{eq:restricted-laplacian-of-tensor-fields}
+    (\Delta'{T})(x)=\sum_{i=1}^{n}\left(\nabla^{2}T\right)(;e_{i};e_{i}).
+    \end{equation}
+
+    This is independent of the choice of an orthonormal basis and the tensor
+    field \(\Delta'{T}\) so defined, which is again of type
+    \((r,s)\), is called the \textit{restricted Laplacian} of \(T\).
+
+  </section>
+  <section>
+
+    When \(T\) is a function \(f\), then \(\nabla^{2}T\) coincides with
+    \(H_{f}\) and \(\Delta'{T}\) is nothing but \(\Delta{f}\).
+
+  </section>
+  <section>
+
+    The expression for \(\Delta'{T}\) in conventional tensor notation is
+    \[
+    \left(\Delta'{T}\right)^{i_{1}\cdots{i_{r}}}_{j_{1}\cdots{j_{s}}}
+    =\sum_{a,b=1}^{n}g^{ab}T^{i_{1}\cdots{i_{r}}}_{j_{1}\cdots{j_{s}};a;b}
+    \] 
+  </section>
+  <section>
+    <section>
+      <h3>Computing the Laplacian of \(f=\text{trace}\left(A^{2}\right)\)</h3>
+      <section>
+      \begin{align*}
+      Yf   & = Y\left(\text{trace}\left(A^{2}\right)\right)                   \\
+           & = \text{trace}\left(\nabla_{Y}A^{2}\right)                       \\
+           & = \text{trace}\left((\nabla_{Y}A)A+A(\nabla_{Y}A)\right)         \\
+           & = \text{trace}\left((\nabla_{Y}A)A}+\trace{A(\nabla_{Y}A)\right) \\
+           & = 2\text{trace}\left(\nabla_{Y}A\right)A
+      \end{align*}
+      </section>
+
+    </section>
+    <section>
+
+      \begin{align*}
+      XYf                       & = X\left(2\trace{\left(\nabla_{Y}A\right)A}\right)                                                       \\
+                                & = 2\trace{\nabla_{X}\left(\nabla_{Y}A\right)A+\left(\nabla_{Y}A\right)\left(\nabla_{X}A\right)}          \\
+                                & = 2\trace{\nabla_{X}\left(\nabla_{Y}A\right)A}+2\trace{\left(\nabla_{Y}A\right)\left(\nabla_{X}A\right)} \\
+                                &                                                                                                          \\
+      \left(\nabla_{X}Y\right)A & = 2\trace{\left(\nabla_{\nabla_{X}Y}A\right)A}                                                           \\
+                                &                                                                                                          \\
+      H_{f}(X,Y)                & = XYf-\nabla_{\nabla_{X}Y}f                                                                              \\
+                                & = 2\trace{\left(\nabla_{X}\left(\nabla_{Y}A\right)-\nabla_{\nabla_{X}Y}A\right)A}                        \\
+                                & \qquad+2\trace{\left(\nabla_{Y}A\right)\left(\nabla_{X}A\right)}                                         \\
+                                & = 2\trace{\left(\nabla^{2}A(;Y;X)\right)A}+2\trace{\left(\nabla_{Y}A\right)\left(\nabla_{X}A\right)}
+      \end{align*}
+
+    </section>
+    <section>
+
+      Hence, we get that
+
+      \begin{align*}
+      \frac{1}{2}\Delta{f} & = \sum_{i=1}^{n}\left\{\trace{\left(\nabla^{2}A(;e_{i};e_{i})\right)A}+\trace{\left(\nabla_{e_{i}}A\right)^{2}}\right\} \\
+      & = \trace{\left(\Delta'{A}\right)A}+\sum_{i=1}^{n}\trace{\left(\nabla_{e_{i}}A\right)^{2}}                               \\
+      \end{align*}
+
+    </section>
+    <section>
+
+      And by extending the metric \(g\) to the tensor space in the standard way, we
+      may write
+
+      \begin{equation}\label{eq:laplacian-of-f-in-terms-of-the-restricted-laplacian-of-A}
+      \frac{1}{2}\Delta{f}=g(\Delta'{A},A)+g(\nabla{A},\nabla{A})
+      \end{equation}
+
+    </section>
+    <section>
+
+      We shall now compute \(\Delta'{A}\). For this purpose, let us write
+
+      \begin{align*}
+      \mathbb{K}(X,Y) & =\nabla^{2}A(;Y;X)                                        \\
+      & =\nabla_{X}\left(\nabla_{Y}A\right)-\nabla_{\nabla_{X}Y}A
+      \end{align*}
+
+    </section>
+    <section>
+
+      Using the identities
+
+      \[
+      \nabla_{X}Y-\nabla_{Y}X-[X,Y]=0,
+      \]
+
+      and
+
+      \[
+      R(X,Y)=[\nabla_{X},\nabla_{Y}]-\nabla_{[X,Y]},
+      \]
+
+      where the curvature transformation \(R(X,Y)\) and the other term ares
+      regarded as derivations of the algebra of tensor fields, we obtain
+
+      \begin{equation}\label{eq:symmetry-of-the-second-covariant-derivative-of-the-shape-operator}
+      \mathbb{K}(X,Y)=\mathbb{K}(Y,X)+[R(X,Y),A].
+      \end{equation}
+
+    </section>
+    <section>
+
+      Let \(\left\{e_{1},\ldots,e_{n}\right\}\) be an orthonormal basis in
+      \(T_{x}{M}\), and extend them to vector fields
+      \(E_{1},\ldots,E_{n}\) in a neighborhood of \(x\) such that
+      \(\nabla{E_{i}}=0\) at \(x\). Let \(X\) be a vector field such that
+      \(\nabla{X}=0\) at \(x\).
+
+    </section>
+    <section>
+
+      \begin{align*}
+      \mathbb{K}(E_{i},X)E_{i} & =\left(\nabla_{E_{i}}\left(\nabla_{X}A\right)\right)E_{i}-\left(\nabla_{\nabla_{E_{i}}X}A\right)E_{i}              \\
+      & =\nabla_{E_{i}}\left(\left(\nabla_{X}A\right)E_{i}\right)-\left(\nabla_{X}A\right)\left(\nabla_{E_{i}}E_{i}\right) \\
+      & =\nabla_{E_{i}}\left(\left(\nabla_{E_{i}}A\right)X\right)                                                          \\
+      & =\left(\nabla_{E_{i}}\left(\nabla_{E_{i}}A\right)\right)X+\left(\nabla_{E_{i}}A\right)\left(\nabla_{E_{i}}X\right) \\
+      & =\left(\nabla_{E_{i}}\left(\nabla_{E_{i}}A\right)\right)X-\left(\nabla_{\nabla_{E_{i}}E_{i}}A\right)X              \\
+      & =\mathbb{K}(E_{i},E_{i})X
+      \end{align*}
+
+    </section>
+    <section>
+
+      We then get that
+
+      \begin{equation}\label{eq:shape-operators-second-convariant-derivative-at-ei-ei}
+      \mathbb{K}(E_{i},E_{i})X=\mathbb{K}(X,E_{i})E_{i}+[R(E_{i},X),A]E_{i}
+      \end{equation}
+
+      at \(x\).
+
+    </section>
+    <section>
+
+      Similarly, we get that
+
+      \begin{equation}\label{eq:shape-operators-second-covariant-derivative-at-x-ei}
+      \mathbb{K}(X,E_{i})E_{i}=\nabla_{X}\left(\left(\nabla_{E_{i}}A\right)E_{i}\right)
+      \end{equation}
+
+      also at \(x\).
+
+    </section>
+    <section>
+
+      From now on we assume that \(M\) has \textit{constant mean curvature}, that
+      is, \(\trace{A}=\text{constant}\). Under this assumption, we prove that
+
+      \begin{equation}\label{eq:shape-operator-first-covariant-derivative-null-sum-property}
+      \sum_{i=1}^{n}\left(\nabla_{E_{i}}A\right)E_{i}=0
+      \end{equation}
+
+    </section>
+    <section>
+
+      Indeed, we have that
+
+      \begin{align*}
+      g\left(\sum_{i=1}^{n}\left(\nabla_{E_{i}}A\right)E_{i},Z\right) & =\sum_{i=1}^{n}g\left(E_{i},\left(\nabla_{E_{i}}A\right)Z\right) \\
+      & =\sum_{i=1}^{n}g\left(E_{i},\left(\nabla_{Z}A\right)E_{i}\right) \\
+      & =\trace{\nabla_{Z}A}                                             \\
+      & =Z\left(\trace{A}\right) = 0
+      \end{align*}
+
+      Since this is valid for an arbitrary vector field \(Z\), we
+      conclude~\eqref{eq:shape-operator-first-covariant-derivative-null-sum-property}.
+
+    </section>
+    <section>
+
+      Now we have that
+
+      \begin{equation}\label{eq:shape-operator-second-covariant-derivative-null-sum-property}
+      \sum_{i=1}^{n}\mathbb{K}(X,E_{i})E_{i}
+      =\nabla_{X}\left(\sum_{i=1}^{n}\left(\nabla_{E_{i}}A\right)E_{i}\right)=0
+      \end{equation}
+
+      From~\eqref{eq:shape-operators-second-convariant-derivative-at-ei-ei}
+      and~\eqref{eq:shape-operator-second-covariant-derivative-null-sum-property}
+      we get
+
+    </section>
+    <section> 
+
+      \begin{equation}\label{eq:formula-for-the-restricted-laplacian-of-A}
+      \begin{split}
+      \left(\Delta'{A}\right)(X) & = \sum_{i=1}^{n}\left(\nabla^{2}A\right)(X;E_{i};E_{i})                                                                            \\
+      & =\sum_{i=1}^{n}\left\{\left(\nabla_{E_{i}}\left(\nabla_{E_{i}}A\right)\right)X-\left(\nabla_{\nabla_{E_{i}}E_{i}}A\right)X\right\} \\
+      & =\sum_{i=1}^{n}\mathbb{K}(E_{i},E_{i})X                                                                                            \\
+      & =\sum_{i=1}^{n}\left\{\mathbb{K}(X,E_{i})E_{i}+[R(E_{i},X),A]E_{i}\right\}                                                         \\
+      & =\sum_{i=1}^{n}[R(E_{i},X),A]E_{i}
+      \end{split}
+      \end{equation}
+
+    </section>
+    <section>
+
+      By the Gauss equation~\eqref{eq:gauss} we have
+
+      \[
+      R(E_{i},X)=cE_{i}\wedge{X}+AE_{i}\wedge{AX}.
+      \]
+
+      Hence
+
+    </section>
+    <section>
+
+      \begin{align*}
+      \sum_{i=1}^{n}R(E_{i},X)AE_{i} & =\sum_{i=1}^{n}c\left\{g(AE_{i},X)E_{i}-g(E_{i},AE_{i})X\right\}         \\
+      & \quad+\sum_{i=1}^{n}\left\{g(AE_{i},AX)AE_{i}-g(AE_{i},AE_{i})AX\right\} \\
+      & =cAX-c\trace{A}X+A^{3}X-\text{trace}\left(A^{2}\right)AX
+      \end{align*}
+
+      Similarly, we get that
+
+      \[
+      \sum_{i=1}^{n}AR(E_{i},X)E_{i}=cAX-cnAX+A^{3}-\trace{A}A^{2}X
+      \]
+
+    </section>
+    <section>
+
+      \begin{align*}
+      \sum_{i=1}^{n}[R(E_{i},X),A]E_{i} & =ncAX-\text{trace}\left(A^{2}\right)AX \\
+      & \quad-c\trace{A}X+\trace{A}A^{2}X
+      \end{align*}
+
+    </section>
+    <section>
+
+      \begin{equation}\label{eq:restricted-laplacian-of-the-shape-operator}
+      \Delta'{A}=ncA-\text{trace}\left(A^{2}\right)A-c\trace{A}I+\trace{A}A^{2},
+      \end{equation}
+
+      where \(I\) is the identity operator.
+      From~\eqref{eq:laplacian-of-f-in-terms-of-the-restricted-laplacian-of-A}, we
+      obtain
+
+      \begin{equation}\label{eq:final-form-for-the-laplacian-of-f}
+      \begin{split}
+      \frac{1}{2}\Delta{f} & =cn\text{trace}\left(A^{2}\right)-\left(\text{trace}\left(A^{2}\right)\right)^{2}-c\left(\trace{A}\right)^{2} \\
+      & \quad+\trace{A}\text{trace}\left(A^{3}\right)+g\left(\nabla{A},\nabla{A}\right)
+      \end{split}
+      \end{equation}
+
+    </section>
+    <section>
+
+      In particular, if \(M\) is minimal in \(\mathbb{M}\), that is, if
+      \(\trace{A}=0\), then
+
+      \[
+      \Delta'{A}=ncA-\text{trace}\left(A^{2}\right)A
+      \]
+
+      and
+
+      \[
+      \frac{1}{2}\Delta{f}=cnf-f^{2}+g\left(\nabla{A},\nabla{A}\right)
+      \]
+
+    </section>
+    <section>
+
+      \begin{lemma}
+      Let \(A\) be an \(n\times{n}\) symmetric matrix with eigenvalues
+      \(\lambda_{1},\ldots,\lambda_{n}\). Then, for any constant \(c\),
+      we have that
+      \begin{align*}
+      nc\text{trace}\left(A^{2}\right) & -\left(\text{trace}\left(A^{2}\right)\right)^{2}-c\trace{A}^{2}                                                                  \\
+      & +\trace{A}\text{trace}\left(A^{3}\right)=\sum_{i<j}\left(\lambda_{i}-\lambda_{j}\right)^{2}\left(c+\lambda_{i}\lambda_{j}\right)
+      \end{align*}
+      \end{lemma}
+
+    </section>
+      <section>
+
+        Now, for each point \(x\) of the hypersurface \(M\), let
+        \(\left\{e_{1},\ldots,e_{n}\right\}\) be an orthonormal basis in
+        \(T_{x}{M}\) such that
+
+        \[
+        Ae_{i}=\lambda_{i}e_{i}\quad{(1\leqslant{i}\leqslant{n})}.
+        \]
+
+        Then, equation~\eqref{eq:final-form-for-the-laplacian-of-f} can be written as
+        follows
+
+        \begin{equation}\label{eq:formula-for-the-laplacian-of-f-containing-the-sectional-curvature-of-the-immersion}
+        \frac{1}{2}\Delta{f}
+        =\sum_{i<j}\left(\lambda_{i}-\lambda_{j}\right)^{2}K_{ij}+g\left(\nabla{A},\nabla{A}\right)
+        \end{equation}
+
+      </section>
+        <section>
+          <section>
+            <h3>Main results</h3>
+
+            Let \(M\) be a connected hypersurface immersed with constant mean curvature
+            in a space form \(\mathbb{M}\) of dimension \(n+1\) with constant
+            curvature, say, \(c\).
+
+          </section>
+          <section>
+
+            \begin{lemma}\label{lemma1}
+            If \(M\) is compact and has non-negative sectional curvature (for all
+            \(2\)-planes), then we have
             \[
-              \nabla{A}=0
-              \quad\text{and}\quad
-              (\lambda_{i}-\lambda_{j})^{2}K_{ij}=0
-              \quad\text{for all}\quad{i,j}.
+            \nabla{A}=0
+            \quad\text{and}\quad{\left(\lambda_{i}-\lambda_{j}\right)^{2}K_{ij}=0}
             \]
-            In particular, the eigenvalues of $A$ are constant (where the field
-            of unit normals $\xi$ is defined).
-          </section>
-          <section>
-            <h6>
-              Proof.
-            </h6>
-          </section>
-          <section>
-            $\alpha$
-          </section>
-        </section>
+            for all \(i,j\) at every point of \(M\). In particular, the eigenvalues of
+            \(A\) are constant (where the field of unit normals \(\xi\) is defined).
+            \end{lemma}
 
-        <section>
-          <section>
-          <h6>
-            Lemma 2
-          </h6>
           </section>
           <section>
-            If $M$ has non-negative sectional curvature, and
-            \[
-              f=\text{trace}\left(A^{2}\right)
-            \]
-            is constant on $M$, then we have the same conclusions as Lemma 1.
-          </section>
-        </section>
 
-        <section>
-          <section>
-            <h6>
-              Lemma 3
-            </h6>
-          </section>
-          <section>
-            Under the assumptions of Lemma 1 or Lemma 2, either $M$ is totally
-            umbilical or $A$ has exactly two distinct constants as eigenvalues
-            at every point.
-          </section>
-        </section>
+            \begin{lemma}\label{lemma2}
+            If \(M\) has non-negative sectional curvature, and \(f=\text{trace}\left(A^{2}\right)\) is
+            constant on \(M\), then we have the same conclusions as Lemma~\ref{lemma1}.
+            \end{lemma}
 
-        <section>
-          <section>
-            <h6>
-              Theorem 1
-            </h6>
           </section>
           <section>
-            Let $M$ be a complete Riemannian manifold of dimension $n$ with
-            non-negative sectional curvature, and $\phi:M\to{\mathbb{R}^{n+1}}$
-            an isometric immersion with constant mean curvature into an
-            Euclidean space $\mathbb{R}^{n+1}$. If
-            $f=\text{trace}\left(A^{2}\right)$ is constant on $M$, then
-            $\phi(M)$ is of the form $\mathbb{S}^{p}\times\mathbb{R}^{n-p}$,
-            $0\leqslant{p}\leqslant{n}$, where $\mathbb{R}^{n-p}$ is an
-            $(n-p)$-dimensional subspace of $\mathbb{R}^{n+p}$, and
-            $\mathbb{S}^{n}$ is a sphere in the Euclidean subspace
-            perpendicular to $\mathbb{R}^{n-p}$. Except for the case $p=1$,
-            $\phi$ is an imbedding.
-          </section>
-        </section>
 
-        <section> <section>
-            <h6>
-              Corollary 1
-            </h6>
-          </section>
-          <section>
-            If $M$ is, in particular, minimal in Theorem 1, then $\phi(M)$ is a
-            hyperplane and $\phi$ is an imbedding.
-          </section>
-        </section>
-        
-        <section>
-          <section>
-            <h6>
-              Corollary 2
-            </h6>
-          </section>
-          <section>
-            Let $M$ be a connected compact Riemannian manifold of dimension $n$
-            with non-negative sectional curvature. If
-            $\phi:M\to{\mathbb{R}^{n+1}}$ is an isometric immersion with
-            constant mean curvature, then $\phi(M)$ is a hypersphere and $\phi$
-            is an imbedding.
-          </section>
-        </section>
+            \begin{lemma}\label{lemma3}
+            Under the assumptions of Lemma~\ref{lemma1} or Lemma~\ref{lemma2}, either
+            \(M\) is totally umbilical or \(A\) has exactly two distinct constants as
+            eigenvalues at every point.
+            \end{lemma}
 
-        <section>
-          <section>
-            <h6>
-              Theorem 2
-            </h6>
           </section>
           <section>
-            Let $M$ be an $n$-dimensional complete Riemannian manifold with
-            non-negative sectional curvature, and $\phi:M\to{\mathbb{S}^{n+1}}$
+
+            \begin{theorem}\label{theorem1}
+            Let \(M\) be a complete Riemannian manifold of dimension \(n\) with
+            non-negative sectional curvature, and \(\phi:M\to\mathbb{R}^{n+1}\) an
+            isometric immersion with constant mean curvature into an Euclidean space
+            \(\mathbb{R}^{n+1}\). If \(f=\text{trace}\left(A^{2}\right)\) is constant on \(M\), then
+            \(\phi(M)\) is of the form \(\mathbb{S}^{p}\times\mathbb{R}^{n-p}\),
+            \(0\leqslant{p}\leqslant{n}\), where \(\mathbb{R}^{n-p}\) is an
+            \((n-p)\)-dimensional subspace of \(\mathbb{R}^{n+1}\), and
+            \(\mathbb{S}^{p}\) is a sphere in the Euclidean subspace perpendicular to
+            \(\mathbb{R}^{n-p}\). Except for the case \(p=1\), \(\phi\) is an
+            imbedding.
+            \end{theorem}
+
+          </section>
+          <section>
+
+            \begin{corollary}\label{corollary1oftheorem1}
+            If \(M\) is, in particular, minimal in Theorem~\ref{theorem1}, then
+            \(\phi(M)\) is a hyperplane and \(\phi\) is an imbedding.
+            \end{corollary}
+
+          </section>
+          <section>
+
+            \begin{corollary}\label{corollary2oftheorem1}
+            Let \(M\) be a connected compact Riemannian manifold of dimension \(n\)
+            with non-negative sectional curvature. If \(\phi:M\to\mathbb{R}^{n+1}\) is
+            an isometric immersion with constant mean curvature, then \(\phi(M)\) is a
+            hypersphere and \(\phi\) is an imbedding.
+            \end{corollary}
+
+          </section>
+          <section>
+
+            \begin{theorem}\label{theorem2}
+            Let \(M\) be an \(n\)-dimensional complete Riemannian manifold with
+            non-negative sectional curvature, and \(\phi:M\to\mathbb{S}^{n+1}\)
             an isometric immersion with constant mean curvature. If
-            $f=\text{trace}\left(A^{2}\right)$ is constant on $M$, then either:
-            <ul>
-              <li>
-                $\phi(M)$ is a great or small sphere in $\mathbb{S}^{n+1}$, and
-                $\phi$ is an imbedding; or
-              </li>
-              <li>
-                $\phi(M)$ is a product of spheres
-                $\mathbb{S}^{p}(r)\times\mathbb{S}^{q}(s)$, and for
-                $p\notin\{1,n-1\}$, $\phi$ is an imbedding.
-              </li>
-            </ul>
-          </section>
-        </section>
+            \(f=\text{trace}\left(A^{2}\right)\) is constant on \(M\), then
+            either
+            \begin{enumerate}
+            \item
+            \(\phi(M)\) is a great or small sphere in \(\mathbb{S}^{n+1}\), and
+            \(\phi\) is an imbedding; or
+            \item
+            \(\phi(M)\) is a product \(\mathbb{S}^{p}(r)\times\mathbb{S}^{q}(s)\),
+            and for \(p\neq{1,n-1}\), \(\phi\) is an imbedding.
+            \end{enumerate}
+            \end{theorem}
 
-        <section>
-          <section>
-            <h6>
-              Corollary 1
-            </h6>
           </section>
           <section>
-            If $M$ is, in particular, minimal in Theorem 2, then $\phi(M)$ is a
-            great sphere or
-            \[
-              \mathbb{S}^{p}\left(\sqrt{p/n}\right)\times\mathbb{S}^{n-p}\left(\sqrt{\left(n-p\right)/n}\right).
-            \]
-          </section>
-        </section>
 
-        <section>
-          <section>
-            <h6>
-              Corollary 2
-            </h6>
-          </section>
-          <section>
-            Let $M$ be a connected compact Riemannian manifold of dimension $n$
-            with non-negative sectional curvature. If
-            $\phi:M\to{\mathbb{S}^{n+1}}$ is an isometric immersion with
-            constant mean curvature, then the conclusion of Theorem 2 holds.
-          </section>
-        </section>
+            \begin{corollary}\label{corollary1oftheorem2}
+            If \(M\) is, in particular, minimal in Theorem~\ref{theorem2}, then
+            \(\phi(M)\) is a great sphere or
+            \(\mathbb{S}^{p}\left(\sqrt{p/n}\right)\times\mathbb{S}^{n-p}\left(\sqrt{(n-p)/n}\right)\).
+            \end{corollary}
 
-        <section>
-          <section>
-            <h6>
-              Corollary 3
-            </h6>
           </section>
           <section>
-            Let $M$ be a connected compact minimal hypersurface immersed in
-            $\mathbb{S}^{n+1}$. If $M$ has positive sectional curvature, then
-            $M$ is imbedded as a great sphere.
+
+            \begin{corollary}\label{corollary3oftheorem2}
+            Let \(M\) be a connected compact Riemannian manifold of dimension \(n\)
+            with non-negative sectional curvature. If \(\phi:M\to\mathbb{S}^{n+1}\) is
+            an isometric immersion with constant mean curvature, then the conclusion of
+            Theorem~\ref{theorem2} holds.
+            \end{corollary}
+
           </section>
-        </section>
+          <section>
+
+            \begin{corollary}\label{corollary3oftheorem2}
+            Let \(M\) be a connected compact minimal hypersurface immersed in
+            \(\mathbb{S}^{n+1}\). If \(M\) has positive sectional curvature, then \(M\)
+            is imbedded as a great sphere.
+            \end{corollary}
+
+          </section>
+          <section>
 
       </div>
     </div>
